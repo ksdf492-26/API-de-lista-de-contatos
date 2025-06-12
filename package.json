@@ -1,0 +1,30 @@
+{
+  "name": "api-de-lista-de-contatos",
+  "version": "1.0.0",
+  "description": "Projeto: Lista de contatos - Planejamento",
+  "homepage": "https://github.com/ksdf492-26/API-de-lista-de-contatos#readme",
+  "bugs": {
+    "url": "https://github.com/ksdf492-26/API-de-lista-de-contatos/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ksdf492-26/API-de-lista-de-contatos.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "src/server.ts",
+  "scripts": {
+    "dev": "node --import=tsx --watch ./src/server.ts"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "helmet": "^8.1.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.0.1",
+    "tsx": "^4.20.2",
+    "typescript": "^5.8.3"
+  }
+}
