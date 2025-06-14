@@ -1,10 +1,10 @@
 import express from 'express';
-const router = express();
+
+import getRouter from './get'
+
+const router = express.Router();
 
 
-
-router.get('/',(req,res) => {
-    res.send("Ola mundo")
-})
+router.use("/contatos",getRouter)
 
 export default router;
