@@ -18,3 +18,12 @@ export const createContact = async (name:string) => {
         list.push(name)
         await writeFile(dataSource, list.join('\n'))
 } 
+
+export const delContact = async (name:string) => {
+       const list = await getContact()
+        const newList = list.filter(item => (item.toLowerCase() !== name.toLowerCase()))
+    
+        await writeFile(dataSource,newList.join('\n'));
+    
+
+}
