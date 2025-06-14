@@ -13,3 +13,8 @@ export const getContact = async () => {
     }
     return list ;
 }
+export const createContact = async (name:string) => {
+        const list = await getContact()
+        list.push(name)
+        await writeFile(dataSource, list.join('\n'))
+} 
